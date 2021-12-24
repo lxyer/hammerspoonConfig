@@ -13,4 +13,5 @@ require "modules/caffeine"
 require "modules/inputstat"
 require "modules/dict"
 require "modules/jsonFormat"
+require "modules/input"
 
