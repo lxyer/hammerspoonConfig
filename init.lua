@@ -14,4 +14,6 @@ require "modules/inputstat"
 require "modules/dict"
 require "modules/jsonFormat"
 require "modules/input"
+require "modules/showHotKeys"
+--require "modules/kSheet"
 

@@ -1,8 +1,6 @@
 
 B
 modules/reload.lua,7/f/7f24f2eb37af46bc852f8cdadddb4e84af66a8ae
-D
-modules/timesync.lua,0/a/0a7a4c07ba7754e1ec23fecb3d7217cf3bc14628
 C
 modules/snippet.lua,4/1/418abb2dfd38492516d3430626d04f0548242c4b
 \
@@ -25,8 +23,6 @@ D
 data/initConfig.json,1/c/1c93d0756b8f02af1a4cb74370276c9e25350eb7
 @
 modules/dict.lua,f/2/f2aee3850dbefd97a8999d2a606df0ceb82fbc61
-C
-modules/windows.lua,5/f/5fd2f7500831c86e5fb1ed5db72e5f4225364804
 B
 modules/system.lua,b/b/bb947c22f02b2d748f0a464fbe5f1ab6c6c8bbdc
 F
@@ -35,9 +31,7 @@ C
 modules/commons.lua,6/6/666117ee8bd3a5540c5fd5b95ce28186ef3f41f6
 D
 modules/caffeine.lua,1/7/176d57ac72da0543de4732fd910755a5d18c2047
-B
-modules/hotkey.lua,f/0/f0c8996af42dc86bff4ff30de4506158c78d2ec1
-E
-modules/inputstat.lua,8/c/8caa891553d28bf11e8321f2606ceb0476fbd540
 ;
 LICENSE.txt,7/9/79b82ce9b64a924266619555502f890dd80c83b9
+E
+data/dictHistory.json,7/e/7e9f697c26af6c74f632938a259c8629d5ab55e5
