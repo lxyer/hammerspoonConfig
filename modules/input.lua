@@ -18,15 +18,11 @@ end
 local app2Ime = {
     {'/Applications/iTerm2.app', 'English'},
     {'/Applications/Visual Studio Code.app', 'English'},
-    {'/Applications/Xcode.app', 'English'},
-    {'/Applications/Google Chrome.app', 'English'},
-    {'/System/Library/CoreServices/Finder.app', 'English'},
-    {'/Applications/System Preferences.app', 'English'},
-    {'/Applications/DingTalk.app', 'Chinese'},
+    {'/Applications/Tabby.app', 'English'},
 }
 
 function updateFocusAppInputMethod()
-    local ime = 'English'
+    local ime = 'Chinese'
     local focusAppPath = hs.window.frontmostWindow():application():path()
     for index, app in pairs(app2Ime) do
         local appPath = app[1]
@@ -34,17 +30,16 @@ function updateFocusAppInputMethod()
 
         if focusAppPath == appPath then
             ime = expectedIme
-            hs.alert.show("切换为配置输入法")
             break
         end
     end
 
     if ime == 'English' then
-        Chinese()
-        hs.alert.show("切换为搜狗输入法")
+        English()
+        hs.alert.show("切换为英文输入法")
     else
         Chinese()
-        hs.alert.show("切换为输入法")
+        hs.alert.show("切换为中文输入法")
     end
 end
 
@@ -69,8 +64,8 @@ end)
 -- 窗口激活时自动切换输入法
 function applicationWatcher(appName, eventType, appObject)
     if (eventType == hs.application.watcher.activated or eventType == hs.application.watcher.launched) then
-        --updateFocusAppInputMethod()
-        useChineseInput()
+        updateFocusAppInputMethod()
+        --useChineseInput()
     end
 end
 
